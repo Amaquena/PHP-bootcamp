@@ -1,0 +1,15 @@
+body{
+	background-color: darkgray;
+}
+.header {
+	border-radius: 25px;
+	width: 50cm;
+	height: 7cm;
+}
+#b_header {
+	border-radius: 25px;
+	background-color: gray;
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+}
