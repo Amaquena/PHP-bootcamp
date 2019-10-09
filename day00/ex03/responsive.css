@@ -1,0 +1,28 @@
+body{
+	background-image: url("https://images2.imgix.net/p4dbimg/751/images/31317-1.jpg?fit=fill&trim=color&trimcolor=FFFFFF&trimtol=5&bg=FFFFFF&w=1024&h=768&fm=pjpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+td, tr {
+	border: 1px solid black;
+	border-collapse: collapse;
+	height: 50px;
+	width: 100px;
+}
+.atomicn{
+	text-align: left;
+	vertical-align: bottom;
+	font-size: small;
+	font-size: 1vw;
+}
+.letter{
+	text-align: center;
+	font-size: larger;
+	font-size: 1vw;
+}
+.atomicw{
+	text-align: right;
+	vertical-align: top;
+	font-size: small;
+	font-size: 1vw;
+}

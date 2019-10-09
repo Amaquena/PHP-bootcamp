@@ -1,12 +1,12 @@
 body{
 	background-color: gray;
+	position: relative;
 }
 .header {
 	background-color: #909090;
 	position: relative;
 	margin: auto;
-	width: 85%;
-	height: 25%;
+	width: 1400px;
 	border-radius: 10px;
 	box-shadow: 10px 10px 5px black;
 }
@@ -23,7 +23,7 @@ body{
 	padding-right: 10px;
 	padding-top: 8px;
 	height: 12.5%;
-	widows: 1.5%;
+	width: 1.5%;
 	top: 0px;
 	right: 0px;
 }
@@ -39,38 +39,98 @@ body{
 }
 
 #loupe {
-	float: right;
-	object-fit: contain;
+	position: absolute;
+	height: 115%;
+	width: 15%;
+	margin-left: 50%;
 }
 
 .leftside {
 	background-color: #909090;
-	margin-left: 10%;
-	margin-top: 2%;
-	height: 380px;
-	width:  125px;
 	box-shadow: 10px 10px 5px black;
+	float: left;
 	border-radius: 10px;
+	margin-left: 600px;
+	margin-top: 30px;
+	height: 405px;
+	width: 120px;
 }
 
 #lefticon {
-	align-content: center;
-	margin: auto;
-	height: 19%;
-	padding-left: 20%;
+	height: 75px;
+	width: 75px;
+	margin-left: 20px;
 }
 
 .centerimg {
 	background-color: #909090;
+	position: relative;
+	float: left;
+	border-radius: 10px;
 	box-shadow: 10px 10px 5px black;
-	width: 65%;
-	height: 100%;
+	margin-top: 30px;
+	margin-left: 30px;
+	height: 600px;
+	width: 1050px;
 }
-
+#cluster {
+	float: left;
+	margin: 10px;
+	position: relative;
+}
 .rightside {
 	background-color: #909090;
 	box-shadow: 10px 10px 5px black;
+	float: right;
 	border-radius: 10px;
-	height: 500px;
-	width: 500px;
+	margin-right: 600px;
+	margin-top: 30px;
+	height: 405px;
+	width: 120px;
+}
+
+#righticon {
+	height: 75px;
+	width: 75px;
+	margin-top: 20px;
+	margin-left: 20px 
+}
+
+.brick {
+	background-image: url(resources/brick.jpg);
+	background-repeat: repeat;
+	float: right;
+	height: 75px;
+	width: 100px;
+	margin-top: 20px;
+	margin-right: 10px; 
+}
+
+.greenbox {
+	position: absolute;
+	background-color: #8BFD8A;
+	box-shadow: 10px 10px 5px black;
+	border-radius: 10px;
+	height: 170px;
+	width: 520px;
+	margin-left: 500px;
+	margin-top: 550px;
+	z-index: 1;
+}
+
+.sentence {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.one {
+	font-size: x-large;
+}
+
+.two {
+	text-shadow: 5px 5px 5px red;
+}
+
+.field {
+	width: 380px;
 }
