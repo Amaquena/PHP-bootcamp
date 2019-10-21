@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#circle {
+				height: 200px;
+				width: 200px;
+				background-color: red;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		 <div id="circle"></div>
+		<script>
+			var circle = document.getElementById("circle");
+			var size = 200;
+			var color = ["red", "green", "blue"];
+			var index = 0;
+
+			circle.addEventListener("click", click);
+			circle.addEventListener("mouseleave", leave);
+
+			function click(){
+				size = size + 10;
+				if (size > 420)
+					size = 200;
+				index++;
+				if (index == 3)
+					index = 0;
+				circleClick();
+			}
+			function leave(){
+				if (size > 200)
+					size = size - 5;
+				index--;
+				if (index == -1)
+					index = 2;
+				circleClick();
+			}
+
+			function circleClick(){
+				circle.style.height = size + "px";
+				circle.style.width = size + "px";
+				circle.style.backgroundColor = color[index];
+			}
+
+		</script>
+	</body>
+</html>

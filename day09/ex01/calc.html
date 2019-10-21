@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<input type="text" id="first">
+		<select id="option">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		</select>
+		<input type="text" id="second">
+		<button onclick="calculate()" type="submit" id="submitting">Try me!</button>
+
+		<script>
+			function init()
+				{
+    				var count = 30; // set secconds
+    				var counter = setInterval(timer, 1000 * count);
+    				function timer()
+					{
+						window.alert("Please, use me...");
+					}
+				}
+				window.onload = init
+
+			var first = document.getElementById("first");
+			var second = document.getElementById("second");
+			var option = document.getElementById("option");
+			var result;
+			var res;
+
+			function calculate(){
+				if (parseInt(first.value) >= 0 && parseInt(second.value) >= 0)
+				{
+					if (option.value == "+")
+						result = parseInt(first.value) + parseInt(second.value);
+					if (option.value == "-")
+						result = parseInt(first.value) - parseInt(second.value);
+					if (option.value == "*")
+						result = parseInt(first.value) * parseInt(second.value);
+					if (option.value == "/")
+						result = parseInt(first.value) / parseInt(second.value);
+					if (option.value == "%")
+						result = parseInt(first.value) % parseInt(second.value);
+				}
+				else
+					res = -1;
+				if ((parseInt(first.value) == 0 || parseInt(second.value) == 0) && (option.value == "/" || option.value == "%"))
+					res = -2
+				show();
+			}
+			function show(){
+				if (res == -1)
+				{
+					window.alert("Error :(");
+				}
+				else if (res == -2)
+				{
+					window.alert("It's over 9000!")
+					console.log(result);
+				}
+				else
+				{
+					console.log(result);
+					window.alert(result);
+				}
+			}		
+		</script>
+	</body>
+</html>
